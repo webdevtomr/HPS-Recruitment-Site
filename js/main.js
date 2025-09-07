@@ -1,6 +1,66 @@
 // HPS Recruitment Website JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Hero Carousel Functionality
+    const carouselSlides = document.querySelectorAll('.carousel-slide');
+    const carouselNavBtns = document.querySelectorAll('.carousel-nav-btn');
+    let currentSlide = 0;
+    let slideInterval;
+
+    function showCarouselSlide(index) {
+        // Hide all slides and deactivate buttons
+        carouselSlides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            if (carouselNavBtns[i]) {
+                carouselNavBtns[i].classList.remove('active');
+            }
+        });
+
+        // Show selected slide and activate button
+        if (carouselSlides[index] && carouselNavBtns[index]) {
+            carouselSlides[index].classList.add('active');
+            carouselNavBtns[index].classList.add('active');
+        }
+    }
+
+    function nextCarouselSlide() {
+        currentSlide = (currentSlide + 1) % carouselSlides.length;
+        showCarouselSlide(currentSlide);
+    }
+
+    function startCarousel() {
+        slideInterval = setInterval(nextCarouselSlide, 6000); // Change slide every 6 seconds
+    }
+
+    function stopCarousel() {
+        if (slideInterval) {
+            clearInterval(slideInterval);
+        }
+    }
+
+    // Initialize hero carousel if elements exist
+    if (carouselSlides.length > 0 && carouselNavBtns.length > 0) {
+        // Set up navigation buttons
+        carouselNavBtns.forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+                currentSlide = index;
+                showCarouselSlide(currentSlide);
+                stopCarousel();
+                startCarousel(); // Restart timer after manual navigation
+            });
+        });
+
+        // Start automatic slideshow
+        startCarousel();
+
+        // Pause slideshow on hover
+        const heroCarousel = document.querySelector('.hero-carousel');
+        if (heroCarousel) {
+            heroCarousel.addEventListener('mouseenter', stopCarousel);
+            heroCarousel.addEventListener('mouseleave', startCarousel);
+        }
+    }
+
     // Mobile Navigation Toggle
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
@@ -378,3 +438,4 @@ function trackEmergencyCall() {
     console.log('Emergency call initiated:', new Date().toISOString());
     // In a real implementation, this would send analytics data
 }
+

@@ -105,19 +105,35 @@
     </script>
     
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
     <header>
         <nav class="nav-container">
             <div class="logo">
-                <h1>HPS Recruitment</h1>
+                <img src="images/hps-logo.jpg" alt="HPS Recruitment" class="logo-img">
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Our Services</a></li>
+                <li class="dropdown">
+                    <a href="services.html">Our Services</a>
+                    <div class="dropdown-content">
+                        <a href="labour-hire.html">Labour Hire</a>
+                        <a href="permanent-placement.html">Permanent Placement</a>
+                        <a href="shutdowns-projects.html">Shutdowns & Projects</a>
+                    </div>
+                </li>
                 <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="guarantee.html">Our Guarantee</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li class="dropdown">
+                    <a href="guarantee.html">Our Guarantee</a>
+                    <div class="dropdown-content">
+                        <a href="labour-hire-guarantee.html">Labour Hire Guarantees</a>
+                        <a href="permanent-placement-guarantee.html">Permanent Placement Guarantees</a>
+                        <a href="shutdown-projects-guarantee.html">Shutdown & Projects Guarantees</a>
+                    </div>
+                </li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="nav-toggle">
@@ -129,40 +145,48 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-badge">🏗️ Perth's #1 Blue Collar Recruitment</div>
-                    <h1>Find the Right Workers.<br><span class="text-gradient">Fast.</span></h1>
-                    <p class="hero-subtitle">Connect with 100,000+ qualified candidates across WA's blue collar industries</p>
-                    <div class="hero-actions">
-                        <a href="contact.html" class="btn btn-primary">
-                            <span>Get Workers</span>
-                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M8.636 3.5a.5.5 0 0 0-.636-.5H1.5A1.5 1.5 0 0 0 0 4.5v7A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 14.5 3h-6.364zM14 4.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5h6.364l.636.5H14.5a.5.5 0 0 1 .5.5v7z"/>
-                            </svg>
-                        </a>
-                        <a href="tel:0468461792" class="btn btn-ghost">
-                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122L9.98 10.88a6.5 6.5 0 0 1-1.356-.377l-.624-.233.233-.624c.329-.874.158-1.88-.577-2.615L6.24 5.615c-.735-.735-1.741-.906-2.615-.577l-.624.233-.233-.624A6.5 6.5 0 0 1 2.391 3.29l.449-1.805a.678.678 0 0 0-.122-.58L1.924 .598z"/>
-                            </svg>
-                            Call Harvey
-                        </a>
+        <section class="hero-carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <div class="carousel-image">
+                        <img src="images/temp-to-perm.jpg" alt="Labour hire construction site" class="hero-image">
+                        <div class="carousel-overlay"></div>
+                    </div>
+                    <div class="carousel-content">
+                        <div class="carousel-text">
+                            <h1>Labour Hire</h1>
+                            <p>Whether you need a single worker for a week or an entire crew for ongoing projects, we deliver flexible workforce solutions. This is labour hire, and the businesses we partner with are known as host employers or clients.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat-card">
-                        <div class="stat-number">100+</div>
-                        <div class="stat-label">Businesses</div>
+                <div class="carousel-slide">
+                    <div class="carousel-image">
+                        <img src="images/shutdowns-projects.jpg" alt="Shutdowns and project staffing" class="hero-image">
+                        <div class="carousel-overlay"></div>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-number">95%</div>
-                        <div class="stat-label">Fill Rate</div>
+                    <div class="carousel-content">
+                        <div class="carousel-text">
+                            <h1>Shutdowns & Project Staffing</h1>
+                            <p>Shutdown projects demand speed and precision—and that's where we excel. We handle recruitment, training, inductions, and rostering while supplying skilled employees at short notice with consistent quality results.</p>
+                        </div>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-number">92%</div>
-                        <div class="stat-label">Satisfaction</div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="carousel-image">
+                        <img src="images/permanent-placement.jpg" alt="Permanent placement meeting" class="hero-image">
+                        <div class="carousel-overlay"></div>
                     </div>
+                    <div class="carousel-content">
+                        <div class="carousel-text">
+                            <h1>Permanent Placement</h1>
+                            <p>Our permanent placement service delivers the right people for your business, with flexibility to suit unique situations. We search, attract, and assess candidates on your behalf, managing the recruitment journey from start to finish.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-navigation">
+                    <button class="carousel-nav-btn active" data-slide="0"></button>
+                    <button class="carousel-nav-btn" data-slide="1"></button>
+                    <button class="carousel-nav-btn" data-slide="2"></button>
                 </div>
             </div>
         </section>
@@ -170,107 +194,216 @@
         <section class="services-preview">
             <div class="container">
                 <div class="section-header">
-                    <h2>How We Help</h2>
-                    <p>Three simple ways to get the workers you need</p>
+                    <h2>Services We Provide</h2>
+                    <p>Comprehensive workforce solutions across Western Australia</p>
                 </div>
                 <div class="services-grid">
                     <div class="service-card">
-                        <div class="service-icon">🔄</div>
-                        <h3>Temp-Perm</h3>
-                        <p>Try before you hire</p>
-                        <div class="service-price">32.5%</div>
-                        <a href="services.html" class="service-link">Learn more →</a>
+                        <div class="service-image-small">
+                            <img src="images/temp-to-perm.jpg" alt="Labour hire construction site" class="service-thumb">
+                        </div>
+                        <h3>Labour Hire</h3>
+                        <p>Whether you need a single worker for a week or an entire crew for ongoing projects, we deliver flexible workforce solutions.</p>
+                        <a href="labour-hire.html" class="service-link">Learn more →</a>
                     </div>
                     <div class="service-card featured">
-                        <div class="service-icon">⚡</div>
-                        <h3>Shutdowns</h3>
-                        <p>Rapid deployment</p>
-                        <div class="service-price">31.5%</div>
-                        <a href="services.html" class="service-link">Learn more →</a>
+                        <div class="service-image-small">
+                            <img src="images/permanent-placement.jpg" alt="Permanent placement meeting" class="service-thumb">
+                        </div>
+                        <h3>Permanent Placement</h3>
+                        <p>Our permanent placement service delivers the right people for your business, with flexibility to suit unique situations.</p>
+                        <a href="permanent-placement.html" class="service-link">Learn more →</a>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">👥</div>
-                        <h3>Permanent</h3>
-                        <p>Full recruitment</p>
-                        <div class="service-price">$2.5k-3.5k</div>
-                        <a href="services.html" class="service-link">Learn more →</a>
+                        <div class="service-image-small">
+                            <img src="images/shutdowns-projects.jpg" alt="Shutdowns and project staffing" class="service-thumb">
+                        </div>
+                        <h3>Shutdowns & Projects</h3>
+                        <p>Shutdown projects demand speed and precision—and that's where we excel. We handle recruitment, training, and rostering.</p>
+                        <a href="shutdowns-projects.html" class="service-link">Learn more →</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="guarantee-preview">
+        <section class="job-vacancy-section">
             <div class="container">
-                <div class="guarantee-content">
-                    <div class="guarantee-text">
-                        <h2>Our Promise</h2>
-                        <p>Every placement comes with rock-solid guarantees because we're confident in our ability to deliver.</p>
-                        <div class="guarantee-points">
-                            <div class="guarantee-point">
-                                <div class="point-icon">✓</div>
-                                <span>750-hour temp-perm guarantee</span>
-                            </div>
-                            <div class="guarantee-point">
-                                <div class="point-icon">✓</div>
-                                <span>Immediate replacement for no-shows</span>
-                            </div>
-                            <div class="guarantee-point">
-                                <div class="point-icon">✓</div>
-                                <span>12-week permanent placement coverage</span>
-                            </div>
+                <div class="vacancy-content">
+                    <h2>Submit a Job Vacancy</h2>
+                    <p>Provide details about your current Job Vacancy, we'll contact you to confirm the details.</p>
+                    <a href="contact.html" class="btn btn-primary btn-large">REQUEST STAFF</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose-section">
+            <div class="container">
+                <div class="why-choose-header">
+                    <h2>Why Choose HPS Recruitment?</h2>
+                    <p>The smart choice for Perth businesses</p>
+                </div>
+                <div class="advantages-grid">
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                            </svg>
                         </div>
-                        <a href="guarantee.html" class="btn btn-outline">View All Guarantees</a>
+                        <h3>24/7 Support</h3>
+                        <p>Dedicated contacts available around the clock</p>
                     </div>
-                    <div class="guarantee-visual">
-                        <div class="guarantee-badge">
-                            <div class="badge-content">
-                                <div class="badge-icon">🛡️</div>
-                                <div class="badge-text">
-                                    <div class="badge-title">100% Guaranteed</div>
-                                    <div class="badge-subtitle">Every Placement</div>
-                                </div>
-                            </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                            </svg>
                         </div>
+                        <h3>Immigration Compliant</h3>
+                        <p>All workers verified for Australian work rights</p>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3>Proven Systems</h3>
+                        <p>Tried and tested processes that minimise risks</p>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11.5C15.4,11.5 16,12.4 16,13V16C16,17.4 15.4,18 14.8,18H9.2C8.6,18 8,17.4 8,16V13C8,12.4 8.6,11.5 9.2,11.5V10C9.2,8.6 10.6,7 12,7M12,8.2C11.2,8.2 10.5,8.7 10.5,10V11.5H13.5V10C13.5,8.7 12.8,8.2 12,8.2Z"/>
+                            </svg>
+                        </div>
+                        <h3>Lower Risk</h3>
+                        <p>Labour hire reduces your liability as an employer</p>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M7,15H9C9,16.08 10.37,17 12,17C13.63,17 15,16.08 15,15C15,13.9 13.96,13.5 11.76,12.97C9.64,12.44 7,11.78 7,9C7,7.21 8.47,5.69 10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C10.37,7 9,7.92 9,9C9,10.1 10.04,10.5 12.24,11.03C14.36,11.56 17,12.22 17,15C17,16.79 15.53,18.31 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15Z"/>
+                            </svg>
+                        </div>
+                        <h3>Transparent Pricing</h3>
+                        <p>Best market rates with zero hidden fees</p>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M5,16L3,14L5,12L3,10L5,8L7,6L9,8L11,6L13,8L15,6L17,8L19,10L17,12L19,14L17,16L15,18L13,16L11,18L9,16L7,18L5,16M12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14Z"/>
+                            </svg>
+                        </div>
+                        <h3>Trusted Reputation</h3>
+                        <p>Strong client feedback and referrals across industries</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact-preview">
+        <section class="areas-expertise-compact">
             <div class="container">
-                <div class="contact-card">
-                    <div class="contact-info">
-                        <div class="contact-avatar">H</div>
-                        <div class="contact-details">
-                            <h3>Harvey Heys</h3>
-                            <p>Director & Senior Recruiter</p>
-                        </div>
+                <h3>Areas of Expertise</h3>
+                <div class="expertise-columns">
+                    <div class="expertise-column">
+                        <div class="expertise-icon-small">🏭</div>
+                        <span>Manufacturing & Warehousing</span>
                     </div>
-                    <div class="contact-actions">
-                        <a href="tel:0468461792" class="contact-btn primary">
-                            📞 Call Now
-                        </a>
-                        <a href="mailto:harvey@heysindustries.com" class="contact-btn secondary">
-                            ✉️ Email
-                        </a>
+                    <div class="expertise-column">
+                        <div class="expertise-icon-small">🏗️</div>
+                        <span>Civil & Construction</span>
+                    </div>
+                    <div class="expertise-column">
+                        <div class="expertise-icon-small">⛏️</div>
+                        <span>Mining / Oil & Gas</span>
+                    </div>
+                    <div class="expertise-column">
+                        <div class="expertise-icon-small">⚙️</div>
+                        <span>Industrial</span>
                     </div>
                 </div>
-                <div class="location-info">
-                    <span class="location-icon">📍</span>
-                    <span>Serving all of Western Australia from Wanneroo</span>
+            </div>
+        </section>
+
+
+        <section class="company-info">
+            <div class="container">
+                <div class="company-description">
+                    <h3>HPS Recruitment – Perth's Trusted Labour Hire & Recruitment Agency</h3>
+                    <div class="description-content">
+                        <p>The growing demand for outsourced workers has made labour hire one of the fastest-growing solutions for businesses across Australia. Once mainly focused on construction, labour hire is now relied upon in industries ranging from logistics and manufacturing through to healthcare, engineering, and mining.</p>
+                        
+                        <p>HPS Recruitment is a Perth-based labour hire and recruitment agency that stands apart through our specialised approach, commitment to client satisfaction, and unwavering integrity.</p>
+                        
+                        <h4>Why Businesses Choose Us</h4>
+                        <p>Companies turn to HPS Recruitment when they need reliable workers—fast. Whether it's to cover long-term absences, handle seasonal peaks, or meet urgent project deadlines, we deliver qualified and competent staff at short notice with minimal fuss.</p>
+                        
+                        <h4>Our Workforce</h4>
+                        <p>Over the years, HPS has built a diverse database of skilled and unskilled employees ready to step into roles across industries—from trades, plant operators, and civil construction, to logistics, warehousing, oil & gas, engineering, and more. For specialist placements, we carefully match only the right candidate to the right role—never "square pegs in round holes."</p>
+                        
+                        <h4>The Benefits of Labour Hire with HPS</h4>
+                        <p>Recruiting directly can be costly and time-consuming, involving advertising, vetting, training, and compliance. By partnering with HPS, you save valuable time and money. We handle:</p>
+                        <ul>
+                            <li>Recruitment, vetting, and training</li>
+                            <li>Payroll and tax obligations</li>
+                            <li>Superannuation and entitlements</li>
+                            <li>Workers' compensation and insurance</li>
+                        </ul>
+                        <p>Our transparent pricing means no hidden charges, ever.</p>
+                        
+                        <h4>Industry Experience</h4>
+                        <p>We have extensive experience supplying labour hire in Perth's construction and civil sectors, ensuring seamless onboarding and no disruption to projects. Beyond short-term placements, HPS also offers permanent recruitment services for long-term roles, applying a meticulous process to find the right cultural and technical fit.</p>
+                        
+                        <h4>Our Reputation</h4>
+                        <p>Strong client relationships are the foundation of our success. HPS Recruitment has become one of Perth's most trusted staffing agencies by consistently delivering what our clients need, time after time. Much of our business comes from referrals—a reflection of our reliability and service.</p>
+                        
+                        <h4>24/7 Support</h4>
+                        <p>Staffing challenges don't keep business hours, and neither do we. Our team is available 24/7 to ensure you're never left without support.</p>
+                        
+                        <h4>The HPS Difference</h4>
+                        <ul>
+                            <li>Local knowledge with national reach</li>
+                            <li>Rapid response to urgent staffing needs</li>
+                            <li>Access to a wide pool of pre-screened staff</li>
+                            <li>Compliance-driven, safe, and reliable workforce</li>
+                            <li>Transparent pricing with no surprises</li>
+                        </ul>
+                        
+                        <p>When you need a recruitment partner you can trust, HPS Recruitment is your first choice for labour hire and staffing solutions across Perth and regional WA.</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer-blue">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>HPS Recruitment</h3>
+                <div class="footer-section footer-logo-section">
+                    <img src="images/hps-logo.jpg" alt="HPS Recruitment" class="footer-logo">
                     <p>Perth's Most Trusted Blue Collar Recruitment Agency</p>
                 </div>
-                <div class="footer-section">
+                <div class="footer-divider"></div>
+                <div class="footer-section footer-office-section">
+                    <h4>Head Office</h4>
+                    <div class="office-info">
+                        <p><strong>Address:</strong> 947 Wanneroo Road</p>
+                        <p><strong>Phone:</strong> <a href="tel:0468461792">0468 461 792</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:info@hpsrecruitment.com.au">info@hpsrecruitment.com.au</a></p>
+                        <p><strong>Office Hours:</strong> 9am - 7pm</p>
+                    </div>
+                </div>
+                <div class="footer-divider"></div>
+                <div class="footer-section footer-services-section">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li>Shutdowns & Projects</li>
+                        <li>Permanent Placements</li>
+                        <li>Labour Hire</li>
+                    </ul>
+                </div>
+                <div class="footer-divider"></div>
+                <div class="footer-section footer-links-section">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="services.html">Our Services</a></li>
@@ -279,19 +412,14 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Harvey Heys</p>
-                    <p>Phone: <a href="tel:0468461792">0468 461 792</a></p>
-                    <p>Email: <a href="mailto:harvey@heysindustries.com">harvey@heysindustries.com</a></p>
-                    <p>Wanneroo 6065, WA</p>
-                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 HPS Recruitment. All rights reserved.</p>
+                <p>ABN: 12 345 678 901</p>
+                <p>&copy; 2025 HPS Recruitment. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
 
     <script src="js/main.js"></script>
 </body>
