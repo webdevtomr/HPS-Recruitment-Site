@@ -2062,8 +2062,13 @@ footer {
 }
 
 .leadership h3 {
-    color: var(--text-dark);
+    color: var(--primary);
     margin-bottom: 0.5rem;
+}
+
+/* About page header styling */
+.about-content h2 {
+    color: var(--primary);
 }
 
 .leadership a {
