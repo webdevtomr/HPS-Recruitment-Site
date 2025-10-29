@@ -39,7 +39,7 @@ A modern, responsive website for HPS Recruitment, specializing in blue collar st
 ## 📱 Contact
 
 - **Harvey Heys** - Director & Senior Recruiter
-- **Phone:** [0468 461 792](tel:0468461792)
+- **Phone:** [0479 158 941](tel:0479158941)
 - **Email:** [harvey@heysindustries.com](mailto:harvey@heysindustries.com)
 - **Location:** Wanneroo 6065, WA
 
